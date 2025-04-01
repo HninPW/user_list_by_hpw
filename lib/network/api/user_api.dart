@@ -11,6 +11,7 @@ abstract class UserApi{
 
   factory UserApi(Dio dio, {required String baseUrl}) => _UserApi(dio, baseUrl: baseUrl);
 
+  /// get Users
   @GET(kUsers)
   Future<List<UserVo>?> getUsersResponse();
 
